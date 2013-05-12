@@ -11,7 +11,11 @@ def plot_vectors(*vectors):
         maxx = max(v[0], maxx)
         miny = min(v[1], miny)
         maxy = max(v[1], maxy)
-        arr = plt.Arrow(0, 0, v[0], v[1], color=c)
+        if len(v) == 4:
+            print v
+            arr = plt.Arrow(v[0], v[1], v[2], v[3], color=c)
+        else:        
+            arr = plt.Arrow(0, 0, v[0], v[1], color=c)
         ax.add_patch(arr)
     
     print minx, maxx
