@@ -1,4 +1,4 @@
-Here I'll put some samples and testing with.
+Here I'll put some samples and tests.
 
 The samples:
 
